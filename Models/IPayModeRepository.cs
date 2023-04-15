@@ -8,7 +8,7 @@ namespace Supermarket_mvp.Models
 {
     internal interface IPayModeRepository
     {
-        void add(PayModeModel payModeModel);
+        void Add(PayModeModel payModeModel);
         void Edit(PayModeModel payModeModel);
         void Delete(int id);
         IEnumerable<PayModeModel> GetAll();
