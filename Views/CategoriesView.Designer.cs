@@ -92,10 +92,11 @@
             // 
             tabControl1.Controls.Add(tabPageCategoryList);
             tabControl1.Controls.Add(tabPageCategoryDetail);
-            tabControl1.Location = new Point(3, 100);
+            tabControl1.Dock = DockStyle.Fill;
+            tabControl1.Location = new Point(0, 94);
             tabControl1.Name = "tabControl1";
             tabControl1.SelectedIndex = 0;
-            tabControl1.Size = new Size(797, 344);
+            tabControl1.Size = new Size(800, 356);
             tabControl1.TabIndex = 2;
             // 
             // tabPageCategoryList
@@ -111,7 +112,7 @@
             tabPageCategoryList.Location = new Point(4, 24);
             tabPageCategoryList.Name = "tabPageCategoryList";
             tabPageCategoryList.Padding = new Padding(3);
-            tabPageCategoryList.Size = new Size(789, 316);
+            tabPageCategoryList.Size = new Size(792, 328);
             tabPageCategoryList.TabIndex = 0;
             tabPageCategoryList.Text = "Category List";
             tabPageCategoryList.UseVisualStyleBackColor = true;
@@ -120,7 +121,7 @@
             // 
             BtnClose.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             BtnClose.Image = Properties.Resources.cerrar;
-            BtnClose.Location = new Point(575, 252);
+            BtnClose.Location = new Point(578, 252);
             BtnClose.Name = "BtnClose";
             BtnClose.Size = new Size(207, 59);
             BtnClose.TabIndex = 15;
@@ -130,7 +131,7 @@
             // 
             BtnDelete.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             BtnDelete.Image = Properties.Resources.delete;
-            BtnDelete.Location = new Point(575, 187);
+            BtnDelete.Location = new Point(578, 187);
             BtnDelete.Name = "BtnDelete";
             BtnDelete.Size = new Size(207, 59);
             BtnDelete.TabIndex = 14;
@@ -140,7 +141,7 @@
             // 
             BtnEdit.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             BtnEdit.Image = Properties.Resources.edit;
-            BtnEdit.Location = new Point(575, 122);
+            BtnEdit.Location = new Point(578, 122);
             BtnEdit.Name = "BtnEdit";
             BtnEdit.Size = new Size(207, 59);
             BtnEdit.TabIndex = 13;
@@ -150,7 +151,7 @@
             // 
             BtnNew.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             BtnNew.Image = Properties.Resources._new;
-            BtnNew.Location = new Point(575, 57);
+            BtnNew.Location = new Point(578, 57);
             BtnNew.Name = "BtnNew";
             BtnNew.Size = new Size(207, 59);
             BtnNew.TabIndex = 12;
@@ -164,14 +165,14 @@
             DgCategory.Location = new Point(6, 52);
             DgCategory.Name = "DgCategory";
             DgCategory.RowTemplate.Height = 25;
-            DgCategory.Size = new Size(563, 259);
+            DgCategory.Size = new Size(566, 271);
             DgCategory.TabIndex = 11;
             // 
             // BtnSearch
             // 
             BtnSearch.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             BtnSearch.Image = Properties.Resources.search_small;
-            BtnSearch.Location = new Point(504, 6);
+            BtnSearch.Location = new Point(507, 6);
             BtnSearch.Name = "BtnSearch";
             BtnSearch.Size = new Size(65, 40);
             BtnSearch.TabIndex = 10;
@@ -183,7 +184,7 @@
             TxtSearch.Location = new Point(6, 23);
             TxtSearch.Name = "TxtSearch";
             TxtSearch.PlaceholderText = "Data to Search";
-            TxtSearch.Size = new Size(492, 23);
+            TxtSearch.Size = new Size(495, 23);
             TxtSearch.TabIndex = 9;
             // 
             // label2

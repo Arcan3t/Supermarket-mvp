@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             panel1 = new Panel();
+            BtnCustomers = new Button();
             BtnCategories = new Button();
             BtnExit = new Button();
             BtnPayMode = new Button();
@@ -39,6 +40,7 @@
             // 
             // panel1
             // 
+            panel1.Controls.Add(BtnCustomers);
             panel1.Controls.Add(BtnCategories);
             panel1.Controls.Add(BtnExit);
             panel1.Controls.Add(BtnPayMode);
@@ -46,8 +48,18 @@
             panel1.Dock = DockStyle.Left;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(200, 450);
+            panel1.Size = new Size(200, 522);
             panel1.TabIndex = 0;
+            // 
+            // BtnCustomers
+            // 
+            BtnCustomers.BackgroundImage = Properties.Resources.objetivo;
+            BtnCustomers.BackgroundImageLayout = ImageLayout.Zoom;
+            BtnCustomers.Location = new Point(3, 242);
+            BtnCustomers.Name = "BtnCustomers";
+            BtnCustomers.Size = new Size(200, 71);
+            BtnCustomers.TabIndex = 4;
+            BtnCustomers.UseVisualStyleBackColor = true;
             // 
             // BtnCategories
             // 
@@ -64,7 +76,7 @@
             BtnExit.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             BtnExit.BackgroundImage = Properties.Resources.salida;
             BtnExit.BackgroundImageLayout = ImageLayout.Zoom;
-            BtnExit.Location = new Point(0, 376);
+            BtnExit.Location = new Point(0, 448);
             BtnExit.Name = "BtnExit";
             BtnExit.Size = new Size(200, 71);
             BtnExit.TabIndex = 2;
@@ -94,7 +106,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(800, 522);
             Controls.Add(panel1);
             IsMdiContainer = true;
             Name = "MainView";
@@ -112,5 +124,6 @@
         private PictureBox pictureBox1;
         private Button BtnExit;
         private Button BtnCategories;
+        private Button BtnCustomers;
     }
 }
