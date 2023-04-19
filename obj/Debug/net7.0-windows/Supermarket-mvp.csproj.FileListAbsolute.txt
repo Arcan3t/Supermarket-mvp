@@ -42,3 +42,4 @@ D:\Repositorios\Examen2\Supermarket-mvp\bin\Debug\net7.0-windows\runtimes\win-x8
 D:\Repositorios\Examen2\Supermarket-mvp\bin\Debug\net7.0-windows\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
 D:\Repositorios\Examen2\Supermarket-mvp\obj\Debug\net7.0-windows\Supermarket-mvp.csproj.CopyComplete
 D:\Repositorios\Examen2\Supermarket-mvp\obj\Debug\net7.0-windows\Supermarket_mvp.Views.MainView.resources
+D:\Repositorios\Examen2\Supermarket-mvp\obj\Debug\net7.0-windows\Supermarket_mvp.Views.CategoriesView.resources
