@@ -86,7 +86,7 @@ namespace Supermarket_mvp._Repositories
                         customerModel.FirstName = reader["First_Name"].ToString();
                         customerModel.LastName = reader["Last_Name"].ToString();
                         customerModel.Address = reader["Customer_Address"].ToString();
-                        customerModel.Birthday = (DateOnly)reader["Birthday"];
+                        customerModel.Birthday = (DateTime)reader["Birthday"];
                         customerModel.PhoneNumber = (long)reader["Phone_Number"];
                         customerModel.Email = reader["Email"].ToString();
                         customerList.Add(customerModel);
@@ -121,7 +121,7 @@ namespace Supermarket_mvp._Repositories
                         customerModel.FirstName = reader["First_Name"].ToString();
                         customerModel.LastName = reader["Last_Name"].ToString();
                         customerModel.Address = reader["Customer_Address"].ToString();
-                        customerModel.Birthday = (DateOnly)reader["Birthday"];
+                        customerModel.Birthday = (DateTime)reader["Birthday"];
                         customerModel.PhoneNumber = (long)reader["Phone_Number"];
                         customerModel.Email = reader["Email"].ToString();
                         customerList.Add(customerModel);

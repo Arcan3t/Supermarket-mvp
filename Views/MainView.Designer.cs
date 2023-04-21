@@ -55,7 +55,7 @@
             // 
             BtnCustomers.BackgroundImage = Properties.Resources.objetivo;
             BtnCustomers.BackgroundImageLayout = ImageLayout.Zoom;
-            BtnCustomers.Location = new Point(3, 242);
+            BtnCustomers.Location = new Point(0, 242);
             BtnCustomers.Name = "BtnCustomers";
             BtnCustomers.Size = new Size(200, 71);
             BtnCustomers.TabIndex = 4;

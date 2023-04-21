@@ -51,11 +51,11 @@ namespace Supermarket_mvp.Presenters
         {
             var customerMode = new CustomerModel();
             customerMode.Id = Convert.ToInt32(view.CustomerId);
-            customerMode.DocumentNumber = Convert.ToInt32(view.CustomerDocumentNumber);
+            customerMode.DocumentNumber = int.Parse(view.CustomerDocumentNumber);
             customerMode.FirstName = view.CustomerFName;
             customerMode.LastName = view.CustomerLName;
             customerMode.Address = view.CustomerAddress;
-            customerMode.Birthday = DateOnly.Parse(view.CustomerBirthday);
+            customerMode.Birthday = Convert.ToDateTime(view.CustomerBirthday);
             customerMode.PhoneNumber = long.Parse(view.CustomerPhoneNumber);
             customerMode.Email = view.CustomerEmail;
 

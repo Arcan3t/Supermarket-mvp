@@ -36,7 +36,7 @@ namespace Supermarket_mvp.Models
         [DisplayName("Customer Birthday")]
         [Required(ErrorMessage = "Customer birthday is required")]
         [StringLength(50, MinimumLength = 3, ErrorMessage = "Customer birthday the format must be between 0001-01-01 and 9999-12-31")]
-        public DateOnly Birthday { get; set; }
+        public DateTime Birthday { get; set; }
 
         [DisplayName("Customer Phone Number")]
         [Required(ErrorMessage = "Customer phone number is required")]
