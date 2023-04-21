@@ -13,6 +13,11 @@ namespace Supermarket_mvp.Models
         [DisplayName("Customer Id")]
         public int Id { get; set; }
 
+        [DisplayName("Customer Document Number")]
+        [Required(ErrorMessage = "Customer document number is required")]
+        [StringLength(10, MinimumLength = 10, ErrorMessage = "Customer document must be 10 characters")]
+        public int DocumentNumber { get; set; }
+
         [DisplayName("Customer First Name")]
         [Required(ErrorMessage = "Customer first name is required")]
         [StringLength(50, MinimumLength = 3, ErrorMessage = "Customer first name must be between 3 and 50 characters")]
@@ -36,7 +41,7 @@ namespace Supermarket_mvp.Models
         [DisplayName("Customer Phone Number")]
         [Required(ErrorMessage = "Customer phone number is required")]
         [StringLength(50, MinimumLength = 3, ErrorMessage = "Customer phone number the format must be 10 digits")]
-        public int PhoneNumber { get; set; }
+        public long PhoneNumber { get; set; }
 
         [DisplayName("Customer Email")]
         [Required(ErrorMessage = "Customer emial is required")]
