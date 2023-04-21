@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             panel1 = new Panel();
+            BtnProducts = new Button();
             BtnCustomers = new Button();
             BtnCategories = new Button();
             BtnExit = new Button();
@@ -40,6 +41,7 @@
             // 
             // panel1
             // 
+            panel1.Controls.Add(BtnProducts);
             panel1.Controls.Add(BtnCustomers);
             panel1.Controls.Add(BtnCategories);
             panel1.Controls.Add(BtnExit);
@@ -50,6 +52,16 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(200, 522);
             panel1.TabIndex = 0;
+            // 
+            // BtnProducts
+            // 
+            BtnProducts.BackgroundImage = Properties.Resources.products;
+            BtnProducts.BackgroundImageLayout = ImageLayout.Zoom;
+            BtnProducts.Location = new Point(0, 319);
+            BtnProducts.Name = "BtnProducts";
+            BtnProducts.Size = new Size(200, 71);
+            BtnProducts.TabIndex = 5;
+            BtnProducts.UseVisualStyleBackColor = true;
             // 
             // BtnCustomers
             // 
@@ -125,5 +137,6 @@
         private Button BtnExit;
         private Button BtnCategories;
         private Button BtnCustomers;
+        private Button BtnProducts;
     }
 }
