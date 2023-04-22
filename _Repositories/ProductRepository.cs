@@ -24,7 +24,7 @@ namespace Supermarket_mvp._Repositories
             {
                 connection.Open();
                 command.Connection = connection;
-                command.CommandText = "INSERT INTO PayMode VALUES (@name, @price, @stock, @category)";
+                command.CommandText = "INSERT INTO Products VALUES (@name, @price, @stock, @category)";
                 command.Parameters.Add("@name", SqlDbType.NVarChar).Value = productModel.Name;
                 command.Parameters.Add("@price", SqlDbType.Int).Value = productModel.Price;
                 command.Parameters.Add("@stock", SqlDbType.Int).Value = productModel.Stock;
@@ -40,7 +40,7 @@ namespace Supermarket_mvp._Repositories
             {
                 connection.Open();
                 command.Connection = connection;
-                command.CommandText = "DELETE FROM PayMode WHERE Pay_Mode_Id = @id";                
+                command.CommandText = "DELETE FROM Products WHERE Pay_Mode_Id = @id";                
                 command.Parameters.Add("@id", SqlDbType.Int).Value = id;
                 command.ExecuteNonQuery();
             }
