@@ -164,6 +164,7 @@
             DgCategory.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             DgCategory.Location = new Point(6, 52);
             DgCategory.Name = "DgCategory";
+            DgCategory.ReadOnly = true;
             DgCategory.RowTemplate.Height = 25;
             DgCategory.Size = new Size(566, 271);
             DgCategory.TabIndex = 11;
@@ -210,7 +211,7 @@
             tabPageCategoryDetail.Location = new Point(4, 24);
             tabPageCategoryDetail.Name = "tabPageCategoryDetail";
             tabPageCategoryDetail.Padding = new Padding(3);
-            tabPageCategoryDetail.Size = new Size(789, 316);
+            tabPageCategoryDetail.Size = new Size(792, 328);
             tabPageCategoryDetail.TabIndex = 1;
             tabPageCategoryDetail.Text = "Category Detail";
             tabPageCategoryDetail.UseVisualStyleBackColor = true;

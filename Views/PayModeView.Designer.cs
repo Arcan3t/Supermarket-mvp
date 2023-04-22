@@ -164,6 +164,7 @@
             DgPayMode.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             DgPayMode.Location = new Point(8, 61);
             DgPayMode.Name = "DgPayMode";
+            DgPayMode.ReadOnly = true;
             DgPayMode.RowTemplate.Height = 25;
             DgPayMode.Size = new Size(563, 259);
             DgPayMode.TabIndex = 3;

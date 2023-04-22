@@ -173,6 +173,7 @@
             DgCustomer.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             DgCustomer.Location = new Point(5, 48);
             DgCustomer.Name = "DgCustomer";
+            DgCustomer.ReadOnly = true;
             DgCustomer.RowTemplate.Height = 25;
             DgCustomer.Size = new Size(566, 271);
             DgCustomer.TabIndex = 19;
