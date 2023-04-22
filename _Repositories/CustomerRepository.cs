@@ -23,7 +23,7 @@ namespace Supermarket_mvp._Repositories
             {
                 connection.Open();
                 command.Connection = connection;
-                command.CommandText = "INSERT INTO Customers VALUES (@document_number, @first_name, @last_name, @custome_address, @birthday, @phone_number, @email)";
+                command.CommandText = "INSERT INTO Customers VALUES (@document_number, @first_name, @last_name, @customer_address, @birthday, @phone_number, @email)";
                 command.Parameters.Add("@document_number", SqlDbType.Int).Value = customerModel.DocumentNumber;
                 command.Parameters.Add("@first_name", SqlDbType.NVarChar).Value = customerModel.FirstName;
                 command.Parameters.Add("@last_name", SqlDbType.NVarChar).Value = customerModel.LastName;
@@ -55,7 +55,9 @@ namespace Supermarket_mvp._Repositories
             {
                 connection.Open();
                 command.Connection = connection;
-                command.CommandText = @"UPDATE Customers SET Document_Number = @document_number, First_Name = @first_name, Last_Name = @last_name, Customer_Address = @custome_address, Birthday = @birthday, Phone_Number = @phone_number, Email = @email WHERE Customer_Id = @id)";
+                command.CommandText = @"UPDATE Customers SET Document_Number = @document_number, First_Name = @first_name, 
+                                        Last_Name = @last_name, Customer_Address = @customer_address, Birthday = @birthday, Phone_Number = @phone_number, 
+                                        Email = @email WHERE Customer_Id = @id";
                 command.Parameters.Add("@document_number", SqlDbType.Int).Value = customerModel.DocumentNumber;
                 command.Parameters.Add("@first_name", SqlDbType.NVarChar).Value = customerModel.FirstName;
                 command.Parameters.Add("@last_name", SqlDbType.NVarChar).Value = customerModel.LastName;
@@ -63,6 +65,7 @@ namespace Supermarket_mvp._Repositories
                 command.Parameters.Add("@birthday", SqlDbType.Date).Value = customerModel.Birthday;
                 command.Parameters.Add("@phone_number", SqlDbType.BigInt).Value = customerModel.PhoneNumber;
                 command.Parameters.Add("@email", SqlDbType.NVarChar).Value = customerModel.Email;
+                command.Parameters.Add("@id", SqlDbType.Int).Value = customerModel.Id;
                 command.ExecuteNonQuery();
             }
         }

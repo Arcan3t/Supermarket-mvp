@@ -22,11 +22,11 @@ namespace Supermarket_mvp.Presenters
             this.view = view;
             this.repository = repository;
 
-            this.view.SearchEvent += SearchCategory;
-            this.view.AddNewEvent += AddNewCategory;
-            this.view.EditEvent += LoadSelectCategoryToEdit;
-            this.view.DeleteEvent += DeleteSelectCategory;
-            this.view.SaveEvent += SaveCategory;
+            this.view.SearchEvent += SearchCustomer;
+            this.view.AddNewEvent += AddNewCustomer;
+            this.view.EditEvent += LoadSelectCustomerToEdit;
+            this.view.DeleteEvent += DeleteSelectCustomer;
+            this.view.SaveEvent += SaveCustomer;
             this.view.CancelEvent += CancelAction;
 
             this.view.SetCustomerListBildingSource(customerBindingSource);
@@ -47,7 +47,7 @@ namespace Supermarket_mvp.Presenters
             CleanViewFields();
         }
 
-        private void SaveCategory(object? sender, EventArgs e)
+        private void SaveCustomer(object? sender, EventArgs e)
         {
             var customerMode = new CustomerModel();
             customerMode.Id = Convert.ToInt32(view.CustomerId);
@@ -95,7 +95,7 @@ namespace Supermarket_mvp.Presenters
             view.CustomerEmail = "";
         }
 
-        private void DeleteSelectCategory(object? sender, EventArgs e)
+        private void DeleteSelectCustomer(object? sender, EventArgs e)
         {
             try
             {
@@ -112,7 +112,7 @@ namespace Supermarket_mvp.Presenters
             }
         }
 
-        private void LoadSelectCategoryToEdit(object? sender, EventArgs e)
+        private void LoadSelectCustomerToEdit(object? sender, EventArgs e)
         {
             var customerMode = (CustomerModel)customerBindingSource.Current;
             view.CustomerId = customerMode.Id.ToString();
@@ -126,12 +126,12 @@ namespace Supermarket_mvp.Presenters
             view.IsEdit = true;
         }
 
-        private void AddNewCategory(object? sender, EventArgs e)
+        private void AddNewCustomer(object? sender, EventArgs e)
         {
             view.IsEdit = false;
         }
 
-        private void SearchCategory(object? sender, EventArgs e)
+        private void SearchCustomer(object? sender, EventArgs e)
         {
             bool emptyValue = string.IsNullOrWhiteSpace(this.view.SearchValue);
             if (emptyValue == false)

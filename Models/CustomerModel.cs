@@ -15,7 +15,6 @@ namespace Supermarket_mvp.Models
 
         [DisplayName("Customer Document Number")]
         [Required(ErrorMessage = "Customer document number is required")]
-        [StringLength(10, MinimumLength = 10, ErrorMessage = "Customer document must be 10 characters")]
         public int DocumentNumber { get; set; }
 
         [DisplayName("Customer First Name")]
@@ -35,12 +34,10 @@ namespace Supermarket_mvp.Models
 
         [DisplayName("Customer Birthday")]
         [Required(ErrorMessage = "Customer birthday is required")]
-        [StringLength(50, MinimumLength = 3, ErrorMessage = "Customer birthday the format must be between 0001-01-01 and 9999-12-31")]
         public DateTime Birthday { get; set; }
 
         [DisplayName("Customer Phone Number")]
         [Required(ErrorMessage = "Customer phone number is required")]
-        [StringLength(50, MinimumLength = 3, ErrorMessage = "Customer phone number the format must be 10 digits")]
         public long PhoneNumber { get; set; }
 
         [DisplayName("Customer Email")]
