@@ -18,15 +18,15 @@ namespace Supermarket_mvp.Models
         [StringLength(50, MinimumLength = 3, ErrorMessage = "Product name must be between 3 and 50 characters")]
         public string Name { get; set; }
 
-        [DisplayName("Observation")]
+        [DisplayName("Product Price")]
         [Required(ErrorMessage = "Product observation is required")]
         public int Price { get; set; }
 
-        [DisplayName("Observation")]
+        [DisplayName("Product Stock")]
         [Required(ErrorMessage = "Product observation is required")]
         public int Stock { get; set; }
 
-        [DisplayName("Observation")]
+        [DisplayName("Product Category")]
         [Required(ErrorMessage = "Product observation is required")]
         public int Category { get; set; }
     }
