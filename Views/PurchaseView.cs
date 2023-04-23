@@ -52,12 +52,9 @@ namespace Supermarket_mvp.Views
                 catch (Exception ex)
                 {
                     MessageBox.Show("PLEASE SELECT THE PRODUCT TO BUY", "FATAL ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-                
+                }                
             };
-
         }
-
         public string ProductId { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
         public string ProductPrice { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
         public string ProductStock { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }

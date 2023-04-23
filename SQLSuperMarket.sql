@@ -46,3 +46,12 @@ CONSTRAINT fk_Category FOREIGN KEY (Category_Id) REFERENCES Categories (Category
 go
 insert into Products values ('Apple', '2000', '5', 100000)
 insert into Products values ('Cow', '20000', '2', 100001)
+
+create table Providers
+(
+Provider_Id int identity (100000,1) primary key,
+Provider_Name nvarchar (50) not null,
+)
+go
+insert into Providers values ('Fresh Fruits')
+insert into Providers values ('ColMeats')
