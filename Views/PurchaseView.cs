@@ -27,7 +27,35 @@ namespace Supermarket_mvp.Views
                 TxtName.Text = DgPurchase.CurrentRow.Cells[1].Value.ToString();
                 TxtPrice.Text = DgPurchase.CurrentRow.Cells[2].Value.ToString();
                 TxtStock.Text = DgPurchase.CurrentRow.Cells[3].Value.ToString();
-            };            
+            };
+
+            BtnPurchase.Click += delegate
+            {
+                try 
+                {
+                    if (int.Parse(TxtQuantity.Text) > int.Parse(TxtStock.Text))
+                    {
+                        MessageBox.Show("Select a quantity less than stock", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
+                    else if (int.Parse(TxtQuantity.Text) <= 0)
+                    {
+                        MessageBox.Show("The quantities to buy must be greater than 0", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Successful purchase", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        Product.Text = TxtName.Text;
+                        int total = int.Parse(TxtPrice.Text) * int.Parse(TxtQuantity.Text);
+                        Price.Text = total.ToString();
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("PLEASE SELECT THE PRODUCT TO BUY", "FATAL ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                
+            };
+
         }
 
         public string ProductId { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
