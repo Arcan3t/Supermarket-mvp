@@ -88,6 +88,7 @@
             // 
             // tabControl1
             // 
+            tabControl1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             tabControl1.Controls.Add(tabPageProviderList);
             tabControl1.Controls.Add(tabPageProviderDetail);
             tabControl1.Location = new Point(0, 100);

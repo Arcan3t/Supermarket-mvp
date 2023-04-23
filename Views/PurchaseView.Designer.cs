@@ -149,7 +149,7 @@
             label6.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Right;
             label6.AutoSize = true;
             label6.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            label6.Location = new Point(357, 32);
+            label6.Location = new Point(360, 32);
             label6.Name = "label6";
             label6.Size = new Size(79, 15);
             label6.TabIndex = 28;
@@ -159,7 +159,7 @@
             // 
             TxtId.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Right;
             TxtId.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            TxtId.Location = new Point(357, 50);
+            TxtId.Location = new Point(360, 50);
             TxtId.Name = "TxtId";
             TxtId.PlaceholderText = "ID";
             TxtId.ReadOnly = true;
@@ -172,7 +172,7 @@
             label5.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Right;
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            label5.Location = new Point(359, 76);
+            label5.Location = new Point(360, 76);
             label5.Name = "label5";
             label5.Size = new Size(100, 15);
             label5.TabIndex = 26;
@@ -182,7 +182,7 @@
             // 
             TxtName.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Right;
             TxtName.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            TxtName.Location = new Point(359, 94);
+            TxtName.Location = new Point(360, 94);
             TxtName.Name = "TxtName";
             TxtName.PlaceholderText = "Name";
             TxtName.ReadOnly = true;
@@ -194,7 +194,7 @@
             label4.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Right;
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            label4.Location = new Point(361, 120);
+            label4.Location = new Point(360, 120);
             label4.Name = "label4";
             label4.Size = new Size(98, 15);
             label4.TabIndex = 24;
@@ -204,7 +204,7 @@
             // 
             TxtPrice.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Right;
             TxtPrice.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            TxtPrice.Location = new Point(361, 138);
+            TxtPrice.Location = new Point(360, 138);
             TxtPrice.Name = "TxtPrice";
             TxtPrice.PlaceholderText = "Price";
             TxtPrice.ReadOnly = true;

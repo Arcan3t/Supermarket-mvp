@@ -31,7 +31,7 @@ namespace Supermarket_mvp.Views
 
             BtnPurchase.Click += delegate
             {
-                try 
+                try
                 {
                     if (int.Parse(TxtQuantity.Text) > int.Parse(TxtStock.Text))
                     {
@@ -52,7 +52,7 @@ namespace Supermarket_mvp.Views
                 catch (Exception ex)
                 {
                     MessageBox.Show("PLEASE SELECT THE PRODUCT TO BUY", "FATAL ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }                
+                }
             };
         }
         public string ProductId { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
