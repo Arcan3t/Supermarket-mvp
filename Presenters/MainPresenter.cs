@@ -47,15 +47,15 @@ namespace Supermarket_mvp.Presenters
             ICustomerRepository repository = new CustomerRepository(sqlConnectionString);
             new CustomerPresenter(view, repository);
         }
-        private void ShowProductView(object? sender, EventArgs e)
+        private void ShowProviderView(object? sender, EventArgs e)
         {
             IProviderView view = ProviderView.GetInstance((MainView)mainView);
             IProviderRepository repository = new ProviderRepository(sqlConnectionString);
             new ProviderPresenter(view, repository);
         }
-        private void ShowProviderView(object? sender, EventArgs e)
+        private void ShowProductView(object? sender, EventArgs e)
         {
-            IProductView view = PurchaseView.GetInstance((MainView)mainView);
+            IProductView view = ProductView.GetInstance((MainView)mainView);
             IProductRepository repository = new ProductRepository(sqlConnectionString);
             new ProductPresenter(view, repository);
         }

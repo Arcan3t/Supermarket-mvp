@@ -24,7 +24,7 @@ namespace Supermarket_mvp._Repositories
             {
                 connection.Open();
                 command.Connection = connection;
-                command.CommandText = "INSERT INTO Providers VALUES (@name, @observation)";
+                command.CommandText = "INSERT INTO Providers VALUES (@name)";
                 command.Parameters.Add("@name", SqlDbType.NVarChar).Value = providerModel.Name;
                 command.ExecuteNonQuery();
             }

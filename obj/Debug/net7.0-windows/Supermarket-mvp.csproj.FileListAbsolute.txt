@@ -46,3 +46,4 @@ D:\Repositorios\Examen2\Supermarket-mvp\obj\Debug\net7.0-windows\Supermarket_mvp
 D:\Repositorios\Examen2\Supermarket-mvp\obj\Debug\net7.0-windows\Supermarket_mvp.Views.CustomerView.resources
 D:\Repositorios\Examen2\Supermarket-mvp\obj\Debug\net7.0-windows\Supermarket_mvp.Views.ProductView.resources
 D:\Repositorios\Examen2\Supermarket-mvp\obj\Debug\net7.0-windows\Supermarket_mvp.Views.PurchaseView.resources
+D:\Repositorios\Examen2\Supermarket-mvp\obj\Debug\net7.0-windows\Supermarket_mvp.Views.ProviderView.resources
